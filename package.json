@@ -1,70 +1,20 @@
 {
-  "name": "calithon-coronavirus-relief-layouts",
+  "name": "calithon-stand-together-layouts",
   "version": "1.0.0",
-  "description": "Calithon Coronavirus Relief marathon layouts using NodeCG + Speedcontrol",
+  "description": "Calithon Stand Together marathon layouts using NodeCG + Speedcontrol",
   "homepage": "https://twitter.com/CalithonSR",
   "author": "BashPrime",
   "dependencies": {},
   "nodecg": {
-    "compatibleRange": "^1.0.0",
-    "dependencies": [
-      "speedcontrol/nodecg-speedcontrol:>=0.9"
-    ],
+    "compatibleRange": "^1.6.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.0.0"
+    },
     "graphics": [
       {
-        "file": "4x3-1player.html",
+        "file": "omnibar.html",
         "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "4x3-2players.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "4x3-3players.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "16x9-1player.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "16x9-2players.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "3ds.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "ds.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "gba.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "gbc-1player.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "gbc-2players.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "Intermission.html",
-        "width": 1280,
-        "height": 720
+        "height": 55
       }
     ]
   },

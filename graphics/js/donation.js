@@ -12,9 +12,8 @@ $(() => {
 			const pollInterval = setInterval(() => loadFromTiltifyApi(), 5000); // run every 5 seconds
 			loadFromTiltifyApi();
 		} else {
-			alert('Cannot request Tiltify API - check TILTIFY_CAMPAIGN_ID and TILTIFY_AUTH_TOKEN');
+			alert('Cannot request Tiltify API - check TILTIFY_CAMPAIGN_ID and TILTIFY_AUTH_TOKEN in donation.js');
 		}
-
 	}
 
 	function loadOffline() {

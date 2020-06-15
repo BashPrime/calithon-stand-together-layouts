@@ -1,68 +1,19 @@
 @font-face {
-	font-family: Economica;
-	src: url('../fonts/Economica-Regular_0.ttf');
+	font-family: 'Montserrat Regular';
+	src: url('../fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
-	font-family: 'Economica Bold';
-	src: url('../fonts/Economica-Bold_0.ttf');
+	font-family: 'Montserrat Bold';
+	src: url('../fonts/Montserrat-Bold.ttf');
 }
 
 body {
-	font-family: 'Economica';
+	font-family: 'Montserrat Regular';
 	color: #f9f9f9;
 	position: absolute;
 	padding: 0;
 	margin: 0;
 	width: 1280px;
 	height: 720px;
-
-	--omnibar-directrelief-width: 215px;
-	--omnibar-item-height: 55px;
-	--omnibar-item-color: #004652;
-}
-
-#donation-container {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	line-height: calc(var(--omnibar-item-height) - 4px);
-	background-color: var(--omnibar-item-color);
-}
-
-#directrelief-logo {
-	display: inline-block;
-	margin-right: 1.5rem;
-	height: var(--omnibar-item-height);
-	vertical-align: middle;
-}
-
-#directrelief-logo img {
-	height: 40px;
-	vertical-align: middle;
-	margin-left: 0.5rem;
-}
-
-#donation-total {
-	display: inline-block;
-	margin-right: 0.5rem;
-	font-family: 'Economica Bold';
-	font-size: 36pt;
-	vertical-align: middle;
-}
-
-#calithon-logo {
-	height: var(--omnibar-item-height);
-	line-height: calc(var(--omnibar-item-height) - 4px);
-	background-color: var(--omnibar-item-color);
-	text-align: right;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-#calithon-logo img {
-	height: 40px;
-	vertical-align: middle;
-	margin: 0 0.75rem;
 }

@@ -1,0 +1,52 @@
+body {
+  /* background: url('../img/layouts/Calithon_4x3_cam.png') no-repeat; */
+  --omnibar-height: 55px;
+  --omnibar-item-color: #0d539a;
+
+  width: 1280px;
+  height: var(--omnibar-height);
+}
+
+#donation-total-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: var(--omnibar-height);
+	background-color: var(--omnibar-item-color);
+}
+
+#charity-logo {
+	display: inline-block;
+	margin-right: 1rem;
+	height: var(--omnibar-height);
+	vertical-align: middle;
+}
+
+#charity-logo img {
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 0.5rem;
+}
+
+#donation-total {
+	display: inline-block;
+	margin-right: 0.5rem;
+	font-size: 30pt;
+	vertical-align: middle;
+}
+
+#calithon-logo {
+	height: var(--omnibar-height);
+	line-height: var(--omnibar-height);
+	background-color: var(--omnibar-item-color);
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#calithon-logo img {
+	height: 40px;
+	vertical-align: middle;
+	margin: 0 0.5rem;
+}
