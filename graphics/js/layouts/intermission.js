@@ -57,8 +57,8 @@ $(() => {
 
     upNextGame.html('Metroid Prime Hunters');
     upNextInfo.html('All Items | Mr_Shasta');
-    runFitText('#up-next-game', upNextGameWidth);
-    runFitText('#up-next-info', upNextInfoWidth);
+    FixSize('#up-next-game');
+    FixSize('#up-next-info');
 
     let onDeckGame1 = $('#on-deck-game1');
     let onDeckInfo1 = $('#on-deck-info1');
@@ -68,13 +68,13 @@ $(() => {
 
     onDeckGame1.text('A Hat in Time');
     onDeckInfo1.text('Any% | flarebear');
-    runFitText('#on-deck-game1', onDeckGameWidth);
-    runFitText('#on-deck-info1', onDeckInfoWidth);
+    FixSize('#on-deck-game1');
+    FixSize('#on-deck-info1');
 
     onDeckGame2.text('Fire Emblem: Three Houses');
     onDeckInfo2.text('Golden Deer | Claris');
-    runFitText('#on-deck-game2', onDeckGameWidth);
-    runFitText('#on-deck-info2', onDeckInfoWidth);
+    FixSize('#on-deck-game2');
+    FixSize('#on-deck-info2');
   }
 
   function loadFromSpeedControl() {
@@ -120,8 +120,8 @@ $(() => {
     upNextGame.html(currentRun.game);
     upNextInfo.html(getNamesForRun(runDataActiveRun.value).join(', '));
 
-    runFitText('#up-next-game', upNextGameWidth);
-    runFitText('#up-next-info', upNextInfoWidth * 0.8);
+    FixSize('#up-next-game');
+    FixSize('#up-next-info');
 
     // On deck games.
     let i = 0;
@@ -133,8 +133,8 @@ $(() => {
       let onDeckRunner = $('#on-deck-info' + (i + 1));
       onDeckGame.html(run.game).show();
       onDeckRunner.html(getNamesForRun(run).join(', ')).show();
-      runFitText('#on-deck-game' + (i + 1), onDeckGameWidth);
-      runFitText('#on-deck-info' + (i + 1), onDeckInfoWidth * 0.8);
+      FixSize('#on-deck-game' + (i + 1));
+      FixSize('#on-deck-info' + (i + 1));
       i += 1;
     }
   }
