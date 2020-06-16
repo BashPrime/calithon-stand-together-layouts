@@ -82,6 +82,16 @@
         "height": 720
       },
       {
+        "file": "gb-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "gb-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
         "file": "omnibar.html",
         "width": 1280,
         "height": 55
