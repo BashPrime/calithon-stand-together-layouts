@@ -1,3 +1,24 @@
+function FixSize(selector) {
+    setTimeout(function(){
+        let divWidth = $(selector + ":visible").width();
+        let fontSize = 92;
+
+        // Reset font to default size to start.
+        $(selector).css("font-size", "");
+
+        let text_org = $(selector + ":visible").html();
+        let text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
+        $(selector + ":visible").html(text_update);
+
+        while ($(selector + ":visible").children().width() > divWidth){
+            // console.log($(selector + ":visible").children().width() + " " + divWidth);
+            $(selector).css("font-size", fontSize -= 1);
+        }
+
+        // console.log(fontSize)
+    }, 500);
+}
+
 function runFitText(selector, baseWidth) {
     $(selector).css('font-size', '');
     let selectorWidth = getAutoWidth(selector);

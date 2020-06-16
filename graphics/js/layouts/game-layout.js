@@ -29,22 +29,28 @@ $(() => {
 
 		// Apply to html
 		gameTitle.html('Metroid Prime: Hunters');
+		FixSize('#game-name');
 		gameCategory.html('All Items');
+		FixSize('#category');
 		gameSystem.html('DS');
 		gameYear.html('2006');
 		gameEstimate.html('01:45:00');
 
-		name1.text('Mr_Shasta');
+		name1.text('MetalGlennSolid');
 		pronouns1.text('He/Him');
+		FixSize('#runner-name1');
 
-		name2.text('Claris');
+		name2.text('MetalGlennSolid');
 		pronouns2.text('She/Her');
+		FixSize('#runner-name2');
 
-		name3.text('TGH');
+		name3.text('MetalGlennSolid');
 		pronouns3.text('He/Him');
+		FixSize('#runner-name3');
 
 		name4.text('Venmi');
 		pronouns4.text('She/Her');
+		FixSize('#runner-name4');
 	}
 
 	function loadFromSpeedControl() {
@@ -72,14 +78,13 @@ $(() => {
 
 			// Split year out from system platform, if present.
 			gameTitle.html(runData.game);
-			runFitText('#game-name', gameNameWidth);
-
 			gameCategory.html(runData.category);
-			runFitText('#category', categoryNameWidth);
-
 			gameSystem.html(runData.system);
 			gameYear.html(runData.release);
 			gameEstimate.html(runData.estimate);
+
+			FixSize('#game-name');
+			FixSize('#category');
 
 			// Set each player names and pronouns.
 			$('.runner-name').add('.pronouns').text('');
@@ -89,11 +94,11 @@ $(() => {
 			for (let team of currentTeamsData) {
 				for (let player of team.players) {
 					$('#runner-name' + (i + 1)).text(player.name);
-					runFitText('#runner-name' + (i + 1), runnerNameWidth);
 
-          // Set pronouns
-					if (pronouns[player.name]) {
-						$('#pronouns' + (i + 1)).text(pronouns[player.name]);
+					// Set pronouns
+					const pronoun = pronouns[player.name];
+					if (pronoun) {
+						$('#pronouns' + (i + 1)).text(pronoun);
 					}
 
 					$('#runner-details' + (i + 1)).data('teamID', player.teamID);

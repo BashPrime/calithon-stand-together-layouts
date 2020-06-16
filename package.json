@@ -12,6 +12,76 @@
     },
     "graphics": [
       {
+        "file": "4x3-1p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-1p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-2p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-2p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-3p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-3p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-4p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "4x3-4p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "16x9-1p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "16x9-1p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "16x9-2p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "16x9-2p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "ds-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "ds-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
         "file": "omnibar.html",
         "width": 1280,
         "height": 55
