@@ -18,15 +18,13 @@ Next, install the following NodeCG bundles:
 
 ```bash
 nodecg install speedcontrol/nodecg-speedcontrol
-nodecg install PowerUpWithPride/speedcontrol-layoutswitch
-nodecg install etaylor8086/calithon-coronavirus-relief-layouts
+nodecg install etaylor8086/calithon-stand-together-layouts
 ```
 
-You can optionally generate default config files for the bundles:
+You can optionally generate default config files for the bundle:
 
 ```bash
 nodecg defaultconfig nodecg-speedcontrol
-nodecg defaultconfig speedcontrol-layoutswitch
 ```
 
 ## Running the application
