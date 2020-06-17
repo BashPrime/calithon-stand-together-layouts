@@ -3,7 +3,6 @@
 
 // The bundle name where all the run information is pulled from.
 const speedcontrolBundle = 'nodecg-speedcontrol';
-const donationBundle = 'speedcontrol-gdqtracker';
 
 const rotateInterval = 15000;
 let rotateState = 0;
@@ -13,6 +12,7 @@ $(() => {
   // Run data.
   let runDataActiveRun = nodecg.Replicant('runDataActiveRun', speedcontrolBundle);
   let runDataArray = nodecg.Replicant('runDataArray', speedcontrolBundle);
+  let currentHost = nodecg.Replicant('currentHost');
 
   // Get the next X runs in the schedule.
   function getNextRuns(runData, amount) {
@@ -52,6 +52,9 @@ $(() => {
   }
 
   function loadOffline() {
+	let host = $('#host');
+	host.html('KrunchyLex');
+
     let upNextGame = $('#up-next-game');
     let upNextInfo = $('#up-next-info');
 
@@ -86,7 +89,11 @@ $(() => {
 
     runDataArray.on('change', (newVal, oldVal) => {
       refreshNextRunsData(runDataActiveRun.value);
-    });
+	});
+
+	currentHost.on('change', (newHost, oldHost) => {
+		$('#host').html(newHost);
+	});
   }
 
   function getNamesForRun(runData) {
