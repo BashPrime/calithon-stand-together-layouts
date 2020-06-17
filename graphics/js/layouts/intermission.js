@@ -98,7 +98,7 @@ $(() => {
       }
     }
 
-    return names.length < 4 ? names : ['Multiple Runners'];
+    return names;
   }
 
   function refreshNextRunsData(currentRun) {

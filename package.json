@@ -72,6 +72,26 @@
         "height": 720
       },
       {
+        "file": "3ds-1p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "3ds-1p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "3ds-4p-cam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "3ds-4p-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
         "file": "ds-cam.html",
         "width": 1280,
         "height": 720
@@ -98,6 +118,11 @@
       },
       {
         "file": "gba-nocam.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "harmony-of-despair.html",
         "width": 1280,
         "height": 720
       },

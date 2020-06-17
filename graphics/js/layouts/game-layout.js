@@ -94,6 +94,7 @@ $(() => {
 			for (let team of currentTeamsData) {
 				for (let player of team.players) {
 					$('#runner-name' + (i + 1)).text(player.name);
+					FixSize('#runner-name' + (i + 1));
 
 					// Set pronouns
 					const pronoun = pronouns[player.name];

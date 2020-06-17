@@ -12,17 +12,18 @@ body {
 
 #up-next-game {
 	font-family: 'Montserrat Bold';
-	font-size: 36pt;
-	width: 420px;
+	font-size: 28pt;
+	width: 411px;
 	line-height: 85px;
 	position: absolute;
 	top: 130px;
 	right: 0;
+	margin: 0 0.5rem;
 }
 
 #up-next-info {
-	font-size: 24pt;
-	width: 375px;
+	font-size: 18pt;
+	width: 385px;
 	line-height: 42px;
 	position: absolute;
 	top: 215px;
@@ -31,46 +32,44 @@ body {
 
 #on-deck-label {
 	font-size: 16pt;
-	width: 385px;
+	width: 382px;
 	position: absolute;
 	top: 266px;
 	right: 0;
 }
 
-#on-deck-game1 {
+.on-deck-game {
 	font-family: 'Montserrat Bold';
-	font-size: 30pt;
-	width: 374px;
+	font-size: 24pt;
+	width: 366px;
 	line-height: 62px;
 	position: absolute;
+	margin: 0 0.5rem;
+}
+
+.on-deck-info {
+	font-size: 18pt;
+	width: 340px;
+	line-height: 42px;
+	position: absolute;
+}
+
+#on-deck-game1 {
 	top: 293px;
 	right: 0;
 }
 
 #on-deck-info1 {
-	font-size: 24pt;
-	width: 330px;
-	line-height: 42px;
-	position: absolute;
 	top: 355px;
 	right: 0;
 }
 
 #on-deck-game2 {
-	font-family: 'Montserrat Bold';
-	font-size: 30pt;
-	width: 374px;
-	line-height: 62px;
-	position: absolute;
 	top: 423px;
 	right: 0;
 }
 
 #on-deck-info2 {
-	font-size: 24pt;
-	width: 330px;
-	line-height: 42px;
-	position: absolute;
 	top: 485px;
 	right: 0;
 }
