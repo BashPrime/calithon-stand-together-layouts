@@ -28,9 +28,10 @@ body {
 }
 
 #donation-total {
+	font-family: 'Montserrat Bold';
 	display: inline-block;
 	margin-right: 0.5rem;
-	font-size: 30pt;
+	font-size: 24pt;
 	vertical-align: middle;
 }
 
