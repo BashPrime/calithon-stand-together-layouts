@@ -88,9 +88,9 @@ $(() => {
 
 			// Set each player names and pronouns.
 			$('.runner-name').add('.pronouns').text('');
-      $('.runner-details').data('teamID', '');
-      let i = 0;
-      
+			$('.runner-details').data('teamID', '');
+			let i = 0;
+
 			for (let team of currentTeamsData) {
 				for (let player of team.players) {
 					$('#runner-name' + (i + 1)).text(player.name);
