@@ -1,5 +1,20 @@
-function FixSize(selector) {
-    setTimeout(function(){
+// jQuery overrides
+jQuery.fn.visible = function() {
+    return this.css('visibility', 'visible');
+};
+
+jQuery.fn.invisible = function() {
+    return this.css('visibility', 'hidden');
+};
+
+jQuery.fn.visibilityToggle = function() {
+    return this.css('visibility', function(i, visibility) {
+        return (visibility == 'visible') ? 'hidden' : 'visible';
+    });
+};
+
+function FixSize(selector, callback) {
+    setTimeout(() => {      
         let divWidth = $(selector + ":visible").width();
         let fontSize = 92;
 
@@ -15,7 +30,9 @@ function FixSize(selector) {
             $(selector).css("font-size", fontSize -= 1);
         }
 
-        // console.log(fontSize)
+        if (callback) {
+            callback();
+        }
     }, 500);
 }
 
