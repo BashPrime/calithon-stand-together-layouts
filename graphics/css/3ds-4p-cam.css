@@ -35,25 +35,27 @@ body {
 }
 
 #game-name {
-	width: 378px;
-	height: 88px;
-	line-height: 88px;
-	top: 0;
-	left: 443px;
+	width: 491px;
+	height: 101px;
+	line-height: 101px;
+	bottom: 103px;
+	left: 0;
 }
 
 #info-container {
-	width: 378px;
+	width: 491px;
 	height: 45px;
 	line-height: 45px;
-	top: 88px;
-	left: 443px;
+	bottom: 58px;
+	left: 0;
 }
 
 #timer {
-	width: 394px;
-	height: 65px;
-	line-height: 65px;
-	left: 443px;
-	top: 253px;
+	font-size: 48pt;
+	width: 507px;
+	height: 146px;
+	line-height: 146px;
+	right: 0;
+	bottom: 58px;
+	background: #0b498b;
 }
